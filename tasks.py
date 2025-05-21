@@ -1,28 +1,3 @@
-
-data={
-    'ahmed' : {'name' :'ahmed', 'age' : 27, 
-               'phone' : {'num1': [12587,36985,8], 
-                          'num2' : [1,8,933,[89,{'ed' : 1478, 
-                                                 "ed2" : [78569,9631]}]]}}
-}
-user_phone=int(input ("enter your phone:..."))
-data["ahmed"]['phone']['num2'][3][1]['ed2'][1]=user_phone
-print(data)
-
-
-
-data={
-'name':'sanabel',
-'phone':1021452,
-}
-data["name"]='soso'
-print(data['name'])
-
-
-
-
-
-
 #Day_1 TASKS///////////////////////////////////////////////////
 # 1)) Write a Python program that calculates the area of a circle based on the radius entered by the user.
 Redias=int(input("enter the Redias of the Circle:..."))
@@ -44,6 +19,7 @@ exam_st_day =int(input("enter exam day:...."))
 exam_st_month =int(input("enter exam month:...."))
 exam_st_year =int(input("enter exam year:...."))
 print("the examination schedule is...",exam_st_day,"/",exam_st_month,"/",exam_st_year)
+
 
 
 
@@ -85,7 +61,70 @@ user_job=input("Enter your job:...")
 user_dic['user_job']=user_job
 
 user_hobby_num=int(input("Enter your hobby number from these choices  (1-Swimming ,2-Climbing ,3-Horsebackriding ,4-Cycling) :..."))
+y=len(user_hobby_num)
 user_dic['user_hobby_num']=user_hobby_num
-print(f'your job is: {user_job} your age is:{user_hobby_num}')
+print(f'your job is: {user_job} your hobby is:{y}')
+
+
+
+
+
+
+
+#Day_3 TASKS//////////////////////////////
+#1)) Write a Python program that asks the user to enter a number and 
+# tells him whether it is an even or odd number.
+usernum1=int(input("Enter a number:..."))
+usernum2=usernum1%2
+if(usernum2==0):
+    print("this is an even number")  
+elif(usernum2==1):
+    print("this is an odd number")
+else:
+    print("Error")
+    
+    
+#2)) Write a Python program to check if a triangle is equilateral, isosceles or scalene.
+first_side=int(input("Enter the first side:.... "))
+second_side=int(input("Enter the second side:.... "))
+third_side=int(input("Enter the third side:.... "))
+
+if(first_side==second_side==third_side):
+    print("It is An equilateral triangle")
+elif(first_side==second_side)and first_side!=third_side:
+    print("It is An isosceles triangle")
+elif(second_side==third_side)and second_side!=first_side:
+    print("It is An isosceles triangle")
+elif(first_side==third_side)and first_side!=second_side:
+    print("It is An isosceles triangle")
+elif(first_side!=second_side!=third_side):    
+    print("It is A scalene triangle")
+else:
+    print("Error")  
+    
+    
+    
+#3)) Write a Python program to find the median of three values.   
+med_user_num=input("Enter three number each one followed by a space ")
+med_user_num_sp=med_user_num.split(' ')
+print(f'the meadian number is {med_user_num_sp[1]}')
+
+
+
+
+#4)) Write a Python program to create the multiplication table (from 1 to 10) of a number.
+usernumber=int(input("Enter a number:..."))
+print(f'the multiplication table of {usernumber} is:')
+print(f'1*{usernumber}={1*usernumber}')
+print(f'2*{usernumber}={2*usernumber}')
+print(f'3*{usernumber}={3*usernumber}')
+print(f'4*{usernumber}={4*usernumber}')
+print(f'5*{usernumber}={5*usernumber}')
+print(f'6*{usernumber}={6*usernumber}')
+print(f'7*{usernumber}={7*usernumber}')
+print(f'8*{usernumber}={8*usernumber}')
+print(f'9*{usernumber}={9*usernumber}')
+print(f'10*{usernumber}={10*usernumber}')
+
 
 
