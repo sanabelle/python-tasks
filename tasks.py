@@ -373,3 +373,62 @@ stars=['*',['*,*'],['*,*,*'],['*,*,*,*'],['*,*,*,*,*'],['*,*,*,*,*,*'],['*,*,*,*
 for i in stars:
     for u in i:
         print(u)
+        
+        
+        
+#Day_9 TASKS//////////////////////////////
+# 1)) # You have a sentence containing multiple words:
+
+# sentence = "Python is a powerful and beautiful programming language"
+# Requirements:
+
+# ✅ Using filter and lambda:
+
+# Extract only words longer than 5 characters.
+
+# ✅ Using map and lambda:
+
+# Convert each word to uppercase.
+
+# ✅ Using recursion:
+
+# Print each word in the list one by one using a recursive function (without for or while).
+
+# ✍️ Expected format:
+
+# sentence = "Python is a powerful and beautiful programming language"
+
+# # 1. Convert the sentence to a list of words
+# # 2. filter => Select words with a length greater than 5
+# # 3. map => Convert words to uppercase
+# # 4. recursion => Print each word one by one
+# 🎯 Expected result:
+# After applying all steps to the sentence, words should appear like:
+
+# PYTHON
+# POWERFUL
+# BEAUTIFUL
+# PROGRAMMING
+# LANGUAGE
+
+sentence = "Python is a powerful and beautiful programming language"
+words=sentence.split()
+print(words)
+long_words=filter(lambda l:len(l)>5,words)
+long_words_list=list(long_words)
+print(long_words_list)
+
+uppercase=map(lambda l2:l2.upper(),long_words_list)
+uppercase_list=list(uppercase)
+print(uppercase_list)
+
+def pr(uppercase_list):
+   if len(uppercase_list)==0:
+      return 0
+   else:
+      print(uppercase_list[0])
+      pr(uppercase_list[1:])
+      
+
+pr(uppercase_list)
+        
