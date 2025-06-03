@@ -1,7 +1,37 @@
 
-def sum(num1,num2):
-      print(num1+num2)
-sum(1,4)
+# import tkinter as tk
+# master=tk.Tk()
+# master.geometry("600x600")
+# master.minsize(400,400)
+# master.maxsize(600,600)
+# master['bg']='#f2e8cf'
+
+
+
+# master.columnconfigure(0,weight=1)
+# master.columnconfigure(2,weight=1)
+# master.columnconfigure(3,weight=1)
+# master.columnconfigure(4,weight=1)
+# #welcom label
+# welcom_label=tk.Label(master,background='#f2e8cf',text='𝙒𝙚𝙡𝙘𝙤𝙢 𝙪𝙨𝙚𝙧',fg='#bc4749',font=('Segoe UI', 24, "bold"))
+# welcom_label.grid(row=0,column=1,columnspan=3,padx=5,pady=10)
+
+# #username label
+# username_label=tk.Label(master,background='#f2e8cf',text='Enter username',fg='#540b0e',)
+# username_label.grid(row=1,column=0,padx=5,pady=5)
+# #username input
+# username_input=tk.Entry(master,width=20)
+# username_input.grid(row=1,column=2,padx=5,pady=5)
+# #password label
+
+
+# master.mainloop()
+
+
+
+# def sum(num1,num2):
+#       print(num1+num2)
+# sum(1,4)
 
 
 # import json as js
