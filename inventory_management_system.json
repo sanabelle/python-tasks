@@ -1,0 +1,15 @@
+{
+    "products": 
+        {
+            "productname": "rice",
+            "productprice": "25$",
+            "productquantity": "10"
+        }
+    ,
+    "users": 
+        {
+            "username": "aya",
+            "password": "123"
+        }
+    
+}
