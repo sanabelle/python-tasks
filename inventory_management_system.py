@@ -8,11 +8,14 @@ master.maxsize(500, 500)
 master.minsize(400, 400)
 master['bg'] = "#3c6e71"
 
+<<<<<<< HEAD
 
 import json
 with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
                     data=json.load(file)
 
+=======
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
 # master.columnconfigure(0, weight=1)
 # master.columnconfigure(1, weight=1)
 # master.columnconfigure(2, weight=1)
@@ -25,9 +28,15 @@ with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inve
 # master.rowconfigure(2, weight=1)
 # master.rowconfigure(3, weight=1)
 
+<<<<<<< HEAD
 # import json
 # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
 #     data=json.load(file)
+=======
+import json
+with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+    data=json.load(file)
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
 # data={
 #       'ahmed':{'name':'ahmed','password':'123','phone':'1111','age':25}
 #    }
@@ -47,6 +56,7 @@ def open_second_page():
     def edit_quantity():
 
         def save3():
+<<<<<<< HEAD
             # import json
             # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
             #         data=json.load(file)
@@ -55,6 +65,10 @@ def open_second_page():
             data['products']['productquantity']=usernewquantity_product
             with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","w") as file:
                 json.dump(data,file,indent=4)
+=======
+            usernewquantity_product=newquantityentry.get()
+            data['products']['productquantity']=usernewquantity_product
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
             print(data)
             open_second_page()
         
@@ -84,6 +98,7 @@ def open_second_page():
     def edit_price():
     
         def save2():
+<<<<<<< HEAD
             # import json
             # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
             #         data=json.load(file)
@@ -91,6 +106,10 @@ def open_second_page():
             data['products']['productprice']=usernewprice_product
             with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","w") as file:
                 json.dump(data,file,indent=4)
+=======
+            usernewprice_product=newpriceentry.get()
+            data['products']['productprice']=usernewprice_product
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
             print(data)
             open_second_page()
         
@@ -121,6 +140,7 @@ def open_second_page():
 
 
         def save():
+<<<<<<< HEAD
             # import json
             # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
             #         data=json.load(file)
@@ -131,6 +151,11 @@ def open_second_page():
                 json.dump(data,file,indent=4)
             print(data)
             
+=======
+            usernewname_product=newnameentry.get()
+            data['products']['productname']=usernewname_product
+            print(data)
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
             open_second_page()
         
         master2.destroy()
@@ -201,9 +226,12 @@ def open_second_page():
         # i+=1
 def check_login():
     #get username and password from entry fields
+<<<<<<< HEAD
             # import json
             # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
             #         data=json.load(file)
+=======
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
             user = username.get()
             user_password = password.get()
         

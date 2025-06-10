@@ -108,9 +108,16 @@ def open_second_page():
                   if new_phone not in data[i]['phone']:
                      data[new_user]={'name':new_user,'password':new_password,'age':new_age,'phone':new_phone,}
                      
+<<<<<<< HEAD
                
                      break
             
+=======
+                     print("Rgestration Done")
+                     print(data)
+                     break
+      
+>>>>>>> 510ce5587147693d8de20ff9746f8660b47fb2f1
       
       
        
