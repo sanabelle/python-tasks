@@ -8,6 +8,11 @@ master.maxsize(500, 500)
 master.minsize(400, 400)
 master['bg'] = "#3c6e71"
 
+
+import json
+with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+                    data=json.load(file)
+
 # master.columnconfigure(0, weight=1)
 # master.columnconfigure(1, weight=1)
 # master.columnconfigure(2, weight=1)
@@ -20,9 +25,9 @@ master['bg'] = "#3c6e71"
 # master.rowconfigure(2, weight=1)
 # master.rowconfigure(3, weight=1)
 
-import json
-with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
-    data=json.load(file)
+# import json
+# with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+#     data=json.load(file)
 # data={
 #       'ahmed':{'name':'ahmed','password':'123','phone':'1111','age':25}
 #    }
@@ -42,8 +47,14 @@ def open_second_page():
     def edit_quantity():
 
         def save3():
+            # import json
+            # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+            #         data=json.load(file)
+            
             usernewquantity_product=newquantityentry.get()
             data['products']['productquantity']=usernewquantity_product
+            with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","w") as file:
+                json.dump(data,file,indent=4)
             print(data)
             open_second_page()
         
@@ -73,8 +84,13 @@ def open_second_page():
     def edit_price():
     
         def save2():
+            # import json
+            # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+            #         data=json.load(file)
             usernewprice_product=newpriceentry.get()
             data['products']['productprice']=usernewprice_product
+            with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","w") as file:
+                json.dump(data,file,indent=4)
             print(data)
             open_second_page()
         
@@ -105,9 +121,16 @@ def open_second_page():
 
 
         def save():
+            # import json
+            # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+            #         data=json.load(file)
             usernewname_product=newnameentry.get()
             data['products']['productname']=usernewname_product
+            
+            with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","w") as file:
+                json.dump(data,file,indent=4)
             print(data)
+            
             open_second_page()
         
         master2.destroy()
@@ -178,6 +201,9 @@ def open_second_page():
         # i+=1
 def check_login():
     #get username and password from entry fields
+            # import json
+            # with open(r"C:\Users\AIA\Desktop\learn python\python-tasks\python-tasks-git\inventory_management_system.json","r") as file:
+            #         data=json.load(file)
             user = username.get()
             user_password = password.get()
         

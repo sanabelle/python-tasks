@@ -1,3 +1,46 @@
+import pymysql
+
+try:
+      # الاتصال بقاعدة بيانات MySQL
+      connection = pymysql.connect(
+            host="localhost",
+            user="root",
+            password="Asassaso2@"
+      )
+
+      print("Connected to MySQL!")
+
+      cursor = connection.cursor()
+
+# إنشاء قاعدة بيانات
+      cursor.execute("CREATE DATABASE IF NOT EXISTS mydatabase")
+      print("Database created successfully (or already exists)")
+
+      # إنهاء الاتصال
+      cursor.close()
+      connection.close()
+
+except Exception as e:
+      print("Error:",e)
+
+# import mysql.connector
+# print("hello")
+# try:
+#       mydb = mysql.connector.connect(
+#             host="localhost",
+#             user="root",
+#             password="Asassaso2@"
+#       )
+
+#       if mydb.is_connected():
+#             print("Connected to MySQL!")
+
+#       mycursor = mydb.cursor()
+#       mycursor.execute("CREATE DATABASE IF NOT EXISTS mydatabase")
+#       print("Database created successfully (or already exists)")
+
+# except Exception as e:
+#       print("Error:",e)
 
 # import tkinter as tk
 # master=tk.Tk()
